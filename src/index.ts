@@ -46,10 +46,10 @@ family.forEach(node => {
         const { shipId } = node;
         if (!graph.hasNode(shipId)) {
           graph.addNode(shipId, { 
-            label: node.shipId,  
+            // label: node.shipId,  
             x: Math.random() * 100, 
             y: Math.random() * 100, 
-            size: 10, 
+            size: 3, 
             color: "red" 
           })
 
@@ -84,7 +84,7 @@ family.forEach(node => {
 const positions = forceAtlas2(graph, {
   iterations: 150,
   settings: {
-    gravity: 10,
+    gravity: 5,
     scalingRatio: 10,
     strongGravityMode: false,
   }

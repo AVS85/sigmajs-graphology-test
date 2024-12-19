@@ -72,5 +72,22 @@ export default [
     id: '009',
     label: 'Сын дочери',
     partnershipsIDs: null
+  },
+  {
+    id: '010',
+    label: 'Брат Деда по матери',
+    partnershipsIDs: null
+  },
+  {
+    id: '011',
+    label: 'Брат2 Деда по матери',
+    partnershipsIDs: null
+  },
+  {
+    id: '012',
+    label: 'Прадед Дедов по матери',
+    partnershipsIDs: [
+      'ship_000006'
+    ]
   }
 ] as IFamily[]

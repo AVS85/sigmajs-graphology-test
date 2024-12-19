@@ -18,5 +18,9 @@ export default [
   {  
     id: 'ship_000005',
     childId: ['009']
+  },
+  {  
+    id: 'ship_000006',
+    childId: ['007', '010', '011']
   }
 ]
