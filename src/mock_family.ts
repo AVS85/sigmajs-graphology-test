@@ -1,51 +1,76 @@
+interface IFamily {
+  id: string;
+  label: string;
+  partnershipsIDs: string[] | null;
+}
+
 export default [
   {
     id: '001',
     label: 'Отец',
-    partnersId: 'ppj3xwaso0k0e07',
-    parentsId: '280ekkfml9e5cor'
+    partnershipsIDs: [
+      'ship_000001', 
+      'ship_000002'
+    ]
   },
   {
     id: '002',
     label: 'Мать',
-    partnersId: 'ppj3xwaso0k0e07',
-    parentsId: '8epjtypmh43u9nb'
+    partnershipsIDs: [
+      'ship_000001'
+    ]
+  },
+  {
+    id: '002_1',
+    label: 'Мать 2',
+    partnershipsIDs: [
+      'ship_000002'
+    ]
   },
   {
     id: '003',
     label: 'Сын',
-    partnersId: null,
-    parentsId: 'ppj3xwaso0k0e07'
+    partnershipsIDs: null,
   },
   {
     id: '004',
     label: 'Дочь',
-    partnersId: null,
-    parentsId: 'ppj3xwaso0k0e07'
+    partnershipsIDs: [
+      'ship_000005'
+    ]
   },
   {
     id: '005',
     label: 'Дед по отцу',
-    partnersId: '280ekkfml9e5cor',
-    parentsId: null
+    partnershipsIDs: [
+      'ship_000003'
+    ]
   },
   {
     id: '006',
     label: 'Бабушка по отцу',
-    partnersId: '280ekkfml9e5cor',
-    parentsId: null
+    partnershipsIDs: [
+      'ship_000003'
+    ]
   },
  
   {
     id: '007',
     label: 'Дед по матери',
-    partnersId: '8epjtypmh43u9nb',
-    parentsId: null
+    partnershipsIDs: [
+      'ship_000004'
+    ]
   },
   {
     id: '008',
     label: 'Бабушка по матери',
-    partnersId: '8epjtypmh43u9nb',
-    parentsId: null
+    partnershipsIDs: [
+      'ship_000004'
+    ]
+  },
+  {
+    id: '009',
+    label: 'Сын дочери',
+    partnershipsIDs: null
   }
-]
+] as IFamily[]
